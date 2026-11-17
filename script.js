@@ -234,15 +234,25 @@ const CONFIG = {
   function setNav(o) { links.classList.toggle("open", o); burger.setAttribute("aria-expanded", o); }
   burger.onclick = () => setNav(!links.classList.contains("open"));
 
-  function show(page, push) {
-    if (page !== "menu") page = "home";
-    $$(".page").forEach(p => p.classList.toggle("active", p.id === "page-" + page));
-    $$(".links a").forEach(a => a.classList.toggle("active", a.dataset.page === page));
+function show(page, push) {
+    const halaman = ["home", "menu", "about", "contact"];
+
+    if (!halaman.includes(page)) page = "home";
+
+    $$(".page").forEach(p => {
+        p.classList.toggle("active", p.id === "page-" + page);
+    });
+
+    $$(".links a").forEach(a => {
+        a.classList.toggle("active", a.dataset.page === page);
+    });
+
     if (push) history.pushState(null, "", "#" + page);
+
     window.scrollTo({ top: 0, behavior: "smooth" });
     setNav(false);
     setTimeout(observe, 50);
-  }
+}
   document.addEventListener("click", e => {
     const el = e.target.closest("[data-page]");
     if (!el) return;
