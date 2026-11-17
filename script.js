@@ -37,10 +37,10 @@ const CONFIG = {
     { nama: "Donat Matcha",           gambar: "gambar/6.donat matcha.jpeg",           warna: "#7c8a43" },
     { nama: "Donat Oreo Strawberry",  gambar: "gambar/7.donat oreo strawberry.jpeg",  warna: "#c42a6c" },
     { nama: "Donat Strawberry",       gambar: "gambar/8.donat strawberry.jpeg",       warna: "#f0457e" },
-    { nama: "Coklat Kacang", gambar: "gambar/coklat kacang.jpeg", warna: "#6b3f2a" },
-    { nama: "Taro Keju", gambar: "gambar/taro.jpeg", warna: "#8e55bd" },
-    { nama: "Matcha Keju", gambar: "gambar/matcha keju.jpeg", warna: "#7c8a43" },
-    { nama: "Tiramisu Kacang", gambar: "gambar/tiramisu kacang.jpeg", warna: "#b49a78" }
+    { nama: "Donat Coklat Kacang", gambar: "gambar/coklat kacang.jpeg", warna: "#6b3f2a" },
+    { nama: "Donat Taro Keju", gambar: "gambar/taro.jpeg", warna: "#8e55bd" },
+    { nama: "Donnat Matcha Keju", gambar: "gambar/matcha keju.jpeg", warna: "#7c8a43" },
+    { nama: "Donat Tiramisu Kacang", gambar: "gambar/tiramisu kacang.jpeg", warna: "#b49a78" }
   ]
 };
 /* ===================== AKHIR CONFIG — jangan ubah di bawah ===================== */
